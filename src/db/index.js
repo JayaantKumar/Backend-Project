@@ -11,7 +11,6 @@ const connectDB = async () => {
         console.log("MONGODB connnection errorrrrrrrrrrrrrrrr", error);
         // it is a method used to handle erroe!!!
         process.exit(1)
-        
     }
 }
 
