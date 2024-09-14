@@ -28,4 +28,11 @@ app.use(express.static("public"))
 // To accept or store cookies from users
 app.use(cookieParser())
 
+// routes import
+import userRouter from './routes/user.routes.js'
+
+// routes declaration
+// we have to use middleware for route declaration
+app.use("/users", userRouter)
+
 export {app} 
